@@ -1,7 +1,7 @@
 {
-  "name": "ad-spam-selfbot-for-discord",
+  "name": "discord-selfbot-spam-pub",
   "version": "1.0.0",
-  "description": "Un bot de musique simplifié ! Une seule action, plusieurs réactions !",
+  "description": "A simplified selfbot for Discord that allows you to spam your ads/publicity in several channels !",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RenardNocturne/Muzikae.git"
+    "url": "git+https://github.com/RenardNocturne/Discord-SelfBot-Spam-Pub.git"
   },
   "author": "RenardNocturne",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RenardNocturne/Muzikae/issues"
+    "url": "https://github.com/RenardNocturne/Discord-SelfBot-Spam-Pub/issues"
   },
-  "homepage": "https://github.com/RenardNocturne/Muzikae#readme",
+  "homepage": "https://github.com/RenardNocturne/Discord-SelfBot-Spam-Pub#readme",
   "dependencies": {
     "discord.js": "^12.5.3",
     "discord.js-selfbot": "^12.0.2"
