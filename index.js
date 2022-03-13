@@ -1,10 +1,12 @@
-const { Client } = require('discord.js-selfbot');
+const Discord = require('discord.js');
+const { Client, Intents } = require('discord.js-selfbot');
 const { loadEvents } = require('./Utils/loader')
 
-const client = new Client();
+const userClient = new Client();
+const client = new Discord.Client()
 
-require('./Utils/functions.js')(client);
-client.config = require('./Ignore/config.js')
-loadEvents(client);
+require('./Utils/functions.js')(userClient);
+userClient.config = require('./Ignore/config')
+loadEvents(userClient);
 
-client.login(client.config.TOKEN)
+userClient.login(userClient.config.TOKEN)

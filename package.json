@@ -1,5 +1,5 @@
 {
-  "name": "muzikae",
+  "name": "ad-spam-selfbot-for-discord",
   "version": "1.0.0",
   "description": "Un bot de musique simplifié ! Une seule action, plusieurs réactions !",
   "main": "index.js",
@@ -18,7 +18,15 @@
   },
   "homepage": "https://github.com/RenardNocturne/Muzikae#readme",
   "dependencies": {
-    "discord.js": "^13.1.0",
+    "discord.js": "^12.5.3",
     "discord.js-selfbot": "^12.0.2"
-  }
+  },
+  "devDependencies": {},
+  "keywords": [
+    "selfbot",
+    "advetise",
+    "discord",
+    "spam",
+    "publicity"
+  ]
 }
