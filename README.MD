@@ -18,13 +18,13 @@ Here is a simple SelfBot that allows you to **spam your announcements** in sever
 What you have to do is only to **follow the [Instructions](#instructions)** and simply run it !
 <br>
 
-## 📜 Instructions 
+## 📜 Instructions  <a name ="instructions">
 #### 🔑 Requirements: <a name="requirements"></a>
 * [Node.JS 12.0.0 or newer.](https://nodejs.org/en/download/)
 * [Git.](https://git-scm.com/downloads)
 * [A Discord account token.](https://github.com/Tyrrrz/DiscordChatExporter/issues/76#issuecomment-410067054)
 
-#### 🔨 Installation
+#### 🔨 Installation <a name="installation">
 * Open a `cmd`.
 * Enter this command line: `git clone https://github.com/RenardNocturne/Discord-SelfBot-Spam-Pub.git`.
 * A new folder named `Discord-SelfBot-Spam-Pub` has appeared ! You can open it.
@@ -35,7 +35,7 @@ What you have to do is only to **follow the [Instructions](#instructions)** and 
 * Enter this last command line into your `cmd`: `node index.js`.
 <br>
 
-## 🎉 Enjoy !
+## 🎉 Enjoy ! <a name="enjoy">
 Now, you should see something like that in your `cmd`:
 ![Result Image](https://github.com/RenardNocturne/Discord-SelfBot-Spam-Pub/blob/master/Images/Result.jpg?raw=true)
 
