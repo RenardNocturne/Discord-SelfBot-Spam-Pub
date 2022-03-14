@@ -32,6 +32,7 @@ What you have to do is only to **follow the [Instructions](#instructions)** and 
 * Open the new `config.js` file with a text editor/ IDE.
 * Complete the new `config.js` file with your token, [channel IDs](https://www.remote.tools/remote-work/how-to-find-discord-id), and your publicity. 
 * Enter this command line into your `cmd`: `cd <path to the new folder>`.
+* Run `npm install` in your `cmd`.
 * Enter this last command line into your `cmd`: `node index.js`.
 <br>
 
