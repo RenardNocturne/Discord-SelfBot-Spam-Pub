@@ -9,7 +9,7 @@
 * [About](#about)
 * [Instructions](#instructions)
     * [Requirements](#requirements)
-    * [Installation](#instalation)
+    * [Installation](#installation)
 * [Enjoy](#enjoy)
 <br>
 
