@@ -5,7 +5,6 @@ const { loadEvents } = require('./Utils/loader.js')
 const userClient = new Client();
 const client = new Discord.Client()
 
-require('./Utils/functions.js')(userClient);
 userClient.config = require('./config.js')
 loadEvents(userClient);
 
