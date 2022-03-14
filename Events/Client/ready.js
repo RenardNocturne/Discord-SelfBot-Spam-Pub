@@ -29,7 +29,7 @@ module.exports = async (client) => {
   slowModes.forEach(item =>  {
     const channel = client.channels.cache.get(item.channelID)
     channel.send(client.config.ADMESSAGE)
-    .then(() => console.log(`✔ Sent ad to ${channel.name} !`))
+    .then(() => console.log(`✅ Sent ad to ${channel.name} !`))
     .catch(err => console.log(`❌ I can't send the ad to ${channel.name}:`, err))
     client.emit("spamAds", item, pickRandomNumberBetweenTwoNumbers) //Sending an event to split different channels and timers
   })

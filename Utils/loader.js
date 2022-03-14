@@ -9,7 +9,7 @@ const loadEvents = (client, dir = './Events') => {
         const evtName = event.split(".")[0];
         client.on(evtName, evt.bind(null, client));
 
-        console.log(`L'évènement ${evtName} a bien été chargée !`);
+        console.log(`✅ Successfully loaded the event ${evtName} !`);
         };
     });
 };
