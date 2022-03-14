@@ -1,5 +1,5 @@
 {
-  "name": "discord-selfbot-spam-pub",
+  "name": "@renardnocturne/discord-selfbot-spam-pub",
   "version": "1.0.0",
   "description": "A simplified selfbot for Discord that allows you to spam your ads/publicity in several channels !",
   "main": "index.js",
