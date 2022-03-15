@@ -27,12 +27,10 @@ What you have to do is only to **follow the [Instructions](#instructions)** and 
 #### 🔨 Installation <a name="installation">
 * Open a `cmd`.
 * Enter this command line: `git clone https://github.com/RenardNocturne/Discord-SelfBot-Spam-Pub.git`.
-* A new folder named `Discord-SelfBot-Spam-Pub` has appeared ! You can open it.
-* Rename the `config.js.example` into `config.js`.
-* Open the new `config.js` file with a text editor/ IDE.
-* Complete the new `config.js` file with your token, [channel IDs](https://www.remote.tools/remote-work/how-to-find-discord-id), and your publicity. 
+* A new folder named `Discord-SelfBot-Spam-Pub` has appeared !
 * Enter this command line into your `cmd`: `cd <path to the new folder>`.
 * Run `npm install` in your `cmd`.
+* Run `node init.js` in your `cmd`. It will create a config.json file, you can still manually modify it with your values. 
 * Enter this last command line into your `cmd`: `node index.js`.
 <br>
 
