@@ -30,7 +30,7 @@ What you have to do is only to **follow the [Instructions](#instructions)** and 
 * A new folder named `Discord-SelfBot-Spam-Pub` has appeared !
 * Enter this command line into your `cmd`: `cd <path to the new folder>`.
 * Run `npm install` in your `cmd`.
-* Run `node init.js` in your `cmd`. It will create a config.json file, you can still manually modify it with your values. 
+* Run `node init.js` in your `cmd`. Please, answer the questions. Then, it will create a `config.json` file, you can still manually modify it with your values. 
 * Enter this last command line into your `cmd`: `node index.js`.
 <br>
 
