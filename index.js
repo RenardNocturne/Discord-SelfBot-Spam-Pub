@@ -1,11 +1,24 @@
-const Discord = require('discord.js');
-const { Client, Intents } = require('discord.js-selfbot');
+const { Client } = require('discord.js-selfbot');
 const { loadEvents } = require('./Utils/loader.js')
 
 const userClient = new Client();
-const client = new Discord.Client()
 
-userClient.config = require('./config.js')
+userClient.config = require("./config.js")
 loadEvents(userClient);
 
-userClient.login(userClient.config.TOKEN)
+userClient.login(userClient.config.TOKEN).catch(err => console.error("I can't log in ! Have you forgot to run node .\\init.js ? Have you provided a valid token ?"))
+
+//       ______                                                        
+//     /      \                                                       
+//     /$$$$$$  |  ______    ______   _____  ____    ______    ______  
+//     $$ \__$$/  /      \  /      \ /     \/    \  /      \  /      \ 
+//     $$      \ /$$$$$$  | $$$$$$  |$$$$$$ $$$$  |/$$$$$$  |/$$$$$$  |
+//     $$$$$$  |$$ |  $$ | /    $$ |$$ | $$ | $$ |$$    $$ |$$ |  $$/ 
+//     /  \__$$ |$$ |__$$ |/$$$$$$$ |$$ | $$ | $$ |$$$$$$$$/ $$ |      
+//     $$    $$/ $$    $$/ $$    $$ |$$ | $$ | $$ |$$       |$$ |      
+//      $$$$$$/  $$$$$$$/   $$$$$$$/ $$/  $$/  $$/  $$$$$$$/ $$/       
+//                $$ |                                                  
+//               $$ |                                                  
+//               $$/                                                     
+// 
+// By RenardNocturne & Nat
