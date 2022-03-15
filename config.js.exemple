@@ -1,5 +1,0 @@
-module.exports = {
-    TOKEN: "Your Discord token goes here",
-    CHANNELS: ["Channel ID in which one you want to advertise", "Another channel ID"],
-    ADMESSAGE: `Your beautiful ad`
-}
