@@ -23,9 +23,13 @@ module.exports = async (client) => {
   //Step 2: Sending messages
   slowModes.forEach(item =>  {
     const channel = client.channels.cache.get(item.channelID)
-    channel.send(client.config.ADMESSAGE)
-    .then(() => console.log(`✅ Sent ad to ${channel.name} !`))
-    .catch(err => console.log(`❌ I can't send the ad to ${channel.name}:`, err))
+    channel.startTyping()
+    setTimeout(() => {
+      channel.stopTyping()
+      channel.send(client.config.ADMESSAGE)
+      .then(() => console.log(`✅ Sent ad to ${channel.name} !`))
+      .catch(err => console.log(`❌ I can't send the ad to ${channel.name}:`, err))
+    }, 1000 * 5)
     client.emit("spamAds", item) //Sending an event to split different channels and timers
   })
 }

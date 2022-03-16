@@ -38,7 +38,8 @@ const loadData = async () => {
         const data = {
             TOKEN: res.TOKEN,
             ADMESSAGE: res.ADMESSAGE,
-            CHANNELS: res.CHANNELS.split(" ")  
+            CHANNELS: res.CHANNELS.split(" "),
+            REPLYING: []  //It will be use later
         }
         dataString = `module.exports = ${JSON.stringify(data)}`
         writeFile("./config.js", dataString, ((err, result) => {
