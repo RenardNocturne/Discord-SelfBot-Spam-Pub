@@ -1,6 +1,22 @@
 const { Client } = require('discord.js-selfbot');
 const { loadEvents } = require('./Utils/loader.js')
 
+console.log(`
+      ______                                                        
+    /       \\                                                       
+    /$$$$$$  |  ______    ______   _____  ____    ______    ______  
+    $$ \\__$$/  /      \\  /      \\ /     \\/    \\  /      \\  /      \\ 
+    $$      \\ /$$$$$$  | $$$$$$  |$$$$$$ $$$$  |/$$$$$$  |/$$$$$$  |
+    $$$$$$  | $$ |  $$ | /    $$ |$$ | $$ | $$ |$$    $$ |$$ |  $$/ 
+    /  \\__$$| $$ |__$$ |/$$$$$$$ |$$ | $$ | $$ |$$$$$$$$/ $$ |      
+    $$    $$/ $$    $$/ $$    $$ |$$ | $$ | $$ |$$       |$$ |      
+     $$$$$$/  $$$$$$$/   $$$$$$$/ $$/  $$/  $$/  $$$$$$$/ $$/       
+              $$ |                                                  
+              $$ |                                                  
+              $$/                                                     
+
+By RenardNocturne & Nat \n\n`);
+
 const userClient = new Client();
 
 userClient.config = require("./config.js")
