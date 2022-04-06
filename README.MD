@@ -24,13 +24,13 @@ What you have to do is only to **follow the [Instructions](#instructions)** and 
 * [Git.](https://git-scm.com/downloads)
 * [A Discord account token.](https://github.com/Tyrrrz/DiscordChatExporter/issues/76#issuecomment-410067054)
 
-#### 🔨 Installation <a name="installation">
+#### 🔨 Installation: <a name="installation">
 * Open a `cmd`.
 * Enter this command line: `git clone https://github.com/RenardNocturne/Discord-SelfBot-Spam-Pub.git`.
 * A new folder named `Discord-SelfBot-Spam-Pub` has appeared !
 * Enter this command line into your `cmd`: `cd <path to the new folder>`.
 * Run `npm install` in your `cmd`.
-* Run `node init.js` in your `cmd`. Please, answer the questions. Then, it will create a `config.json` file, you can still manually modify it with your values. 
+* Run `node init.js` in your `cmd`. Please, answer the questions. Then, it will create a `config.js` file, you can still manually modify it with your values. 
 * Enter this last command line into your `cmd`: `node index.js`.
 <br>
 
