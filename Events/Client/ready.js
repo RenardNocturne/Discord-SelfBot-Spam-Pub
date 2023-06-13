@@ -13,7 +13,7 @@ module.exports = async (client) => {
   for (const channelID of client.config.CHANNELS) {
     const channel = client.channels.cache.get(channelID)
     if (!channel) return console.log("❌ I can't find the channel with the ID " + channelID)
-    if (channel.type !== "GUILD_TEXT") continue //If it's not text channel continue
+    if (channel.type !== "GUILD_TEXT" && !channel.isThread()) continue //If it's not text channel continue
     slowModes.push({
       "channelID": channelID,
       "slowModeInMs": channel.rateLimitPerUser * 1000
