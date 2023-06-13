@@ -1,6 +1,8 @@
+const { Client } = require("discord.js-selfbot-v13");
+
 /**
  * 
- * @param {Discord.Client} client 
+ * @param {Client} client 
  */
 module.exports = async (client) => {
   console.log(`🚀 Client successfully logged in ${client.user.username} !`)
@@ -8,10 +10,10 @@ module.exports = async (client) => {
   const slowModes = []
 
   //Step one: Get slowmodes per channel
-  for (channelID of client.config.CHANNELS) {
-    channel = client.channels.cache.get(channelID)
+  for (const channelID of client.config.CHANNELS) {
+    const channel = client.channels.cache.get(channelID)
     if (!channel) return console.log("❌ I can't find the channel with the ID " + channelID)
-    if (channel.type !== "text") continue //If it's not text channel continue
+    if (channel.type !== "GUILD_TEXT") continue //If it's not text channel continue
     slowModes.push({
       "channelID": channelID,
       "slowModeInMs": channel.rateLimitPerUser * 1000
@@ -21,9 +23,8 @@ module.exports = async (client) => {
   //Step 2: Sending messages
   slowModes.forEach(item =>  {
     const channel = client.channels.cache.get(item.channelID)
-    channel.startTyping()
+    channel.sendTyping()
     setTimeout(() => {
-      channel.stopTyping()
       channel.send(client.config.ADMESSAGE)
       .then(() => console.log(`✅ Sent ad to ${channel.name} !`))
       .catch(err => console.log(`❌ I can't send the ad to ${channel.name}:`, err))

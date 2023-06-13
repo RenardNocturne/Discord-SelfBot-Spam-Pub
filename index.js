@@ -1,4 +1,4 @@
-const { Client } = require('discord.js-selfbot');
+const { Client } = require('discord.js-selfbot-v13');
 const { loadEvents } = require('./Utils/loader.js')
 
 console.log(`
@@ -17,7 +17,9 @@ console.log(`
 
 By RenardNocturne & Nat \n\n`);
 
-const userClient = new Client();
+const userClient = new Client({
+  checkUpdate: false,
+});
 
 userClient.config = require("./config.js")
 require('./Utils/functions')(userClient);

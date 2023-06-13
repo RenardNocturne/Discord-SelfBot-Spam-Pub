@@ -1,3 +1,5 @@
+const { Message, Client } = require("discord.js-selfbot-v13")
+
 /**
  * 
  * @param {Client} client 
@@ -14,9 +16,8 @@ module.exports = (client, message) => {
     client.config.REPLYING.push(message.channel.id)
     setTimeout(() => {
       const channel = message.channel
-        channel.startTyping()
+        channel.sendTyping()
         setTimeout(() => {
-          channel.stopTyping()
           channel.send(client.config.ADMESSAGE)
           .then(() => console.log(`✅ I've successfully replied to the message sent in ${message.channel.name}`))
           .catch(err => null)
