@@ -13,6 +13,7 @@ module.exports = (client, message) => {
 
     client.config.REPLYING.push(message.channel.id)
     setTimeout(() => {
+      const channel = message.channel
         channel.startTyping()
         setTimeout(() => {
           channel.stopTyping()
