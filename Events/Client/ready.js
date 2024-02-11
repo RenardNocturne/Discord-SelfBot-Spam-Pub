@@ -30,6 +30,6 @@ module.exports = async (client) => {
       .then(() => console.log(`✅ Sent ad to ${channel.name} !`))
       .catch(err => console.log(`❌ I can't send the ad to ${channel.name}:`, err))
       client.emit("spamAds", item) //Sending an event to split different channels and timers
-    }, i*1000)
+    }, client.pickRandomNumberBetweenTwoNumbers(0, 10))
   }
 }
