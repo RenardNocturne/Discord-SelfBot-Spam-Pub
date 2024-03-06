@@ -1,7 +1,7 @@
 module.exports = (client, item) => {
     setInterval(() => {
         const channel = client.channels.cache.get(item.channelID)
-        channel.sendTyping()
+        channel.sendTyping().catch(e => null)
         setTimeout(() => {
             channel.send(client.config.ADMESSAGE)
             .then(() => console.log(`✅ Sent ad to ${channel.name} !`))

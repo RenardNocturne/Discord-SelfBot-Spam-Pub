@@ -24,7 +24,7 @@ module.exports = async (client) => {
   for (let i = 0; i < slowModes.length; i++) {
     const item = slowModes[i]
     const channel = client.channels.cache.get(item.channelID)
-    channel.sendTyping()
+    channel.sendTyping().catch(e => null)
     setTimeout(() => {
       channel.send(client.config.ADMESSAGE)
       .then(() => console.log(`✅ Sent ad to ${channel.name} !`))

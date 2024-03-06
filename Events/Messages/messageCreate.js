@@ -16,7 +16,7 @@ module.exports = (client, message) => {
     client.config.REPLYING.push(message.channel.id)
     setTimeout(() => {
       const channel = message.channel
-        channel.sendTyping()
+        channel.sendTyping().catch(e => null)
         setTimeout(() => {
           channel.send(client.config.ADMESSAGE)
           .then(() => console.log(`✅ I've successfully replied to the message sent in ${message.channel.name}`))
